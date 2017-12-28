@@ -49,23 +49,19 @@ class Song
   def self.new_from_filename(attribute)
     artist, song = attribute.split(' - ')
     new_song = song.gsub('.mp3', '')
-    
+
+    song = create_by_name(new_song)
+    song.artist_name = artist
+    song
+  end
+
+  def self.create_from_filename(attribute)
+    artist, song = attribute.split(' - ')
+    new_song = song.gsub('.mp3', '')
+
     song = create_by_name(new_song)
     song.artist_name = artist
     song
 
-    # song = attribute.collect do |row|
-    #   data = row.split(", ") && row.split(".")
-    # name = data[0]
-    #   artist_name = data[1]
-    #   filename_format = data[2]
-    #
-    #   song = self.new
-    #   song.name = name
-    #   song.artist_name = artist_name
-    #   song.filename_format = filename_format
-    #
-    #   song.name
-    #end
   end
 end
