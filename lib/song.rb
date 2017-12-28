@@ -48,7 +48,7 @@ class Song
 
   def self.new_from_filename(filename_format)
     song = self.new
-    song.filename_format=(filename_format)
+    song.name=(filename_format)
     song
   end
 end
