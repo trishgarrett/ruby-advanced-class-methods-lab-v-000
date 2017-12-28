@@ -65,9 +65,5 @@ class Song
   end
 
   def self.destroy_all
-    @@all.collect do |song|
-      if song.name == song
-        song.delete
-      end
-    end    
+  end   
 end
