@@ -66,5 +66,5 @@ class Song
 
   def self.destroy_all
     self.destroy_all.delete_if {|song| song.name}
-
+  end
 end
