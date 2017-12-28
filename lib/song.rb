@@ -49,13 +49,13 @@ class Song
   def self.new_from_filename(@@all)
     rows = @@all.split("\n")
     song = rows.collect do |row|
-      data = row.split(", ")
+      data = row.split(", ") && row.split(".")
       name = data[0]
       artist_name = data[1]
       filename_format = data[2]
-    
-    
-    
+
+
+
 
 
 
