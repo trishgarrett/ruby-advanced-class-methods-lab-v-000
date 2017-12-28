@@ -68,6 +68,7 @@ class Song
     @@all.each do |song|
       if song == song
         delete(song)
+      end  
     end
   end
 end
