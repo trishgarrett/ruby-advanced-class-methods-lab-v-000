@@ -65,6 +65,9 @@ class Song
   end
 
   def self.destroy_all
+    u = Song.find_by_name(name)
+    UsageIndex.destroy_all "user_id = #{u.id}"
+
 
   end
 end
