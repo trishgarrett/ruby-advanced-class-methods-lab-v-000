@@ -50,9 +50,9 @@ class Song
     new_song = self.create_by_name(create_by_name)
     new_song.save
     @@all << new_song
-    
-    
-  
+
+
+
 
 
   end
