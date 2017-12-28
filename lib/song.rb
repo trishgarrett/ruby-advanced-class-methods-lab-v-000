@@ -48,18 +48,19 @@ class Song
 
   def self.new_from_filename(attribute)
     binding.pry
-    song = attribute.collect do |row|
-      data = row.split(", ") && row.split(".")
-    name = data[0]
-      artist_name = data[1]
-      filename_format = data[2]
-
-      song = self.new
-      song.name = name
-      song.artist_name = artist_name
-      song.filename_format = filename_format
-
-      song.name
+    artist, song = attribute.split(' - ')
+    # song = attribute.collect do |row|
+    #   data = row.split(", ") && row.split(".")
+    # name = data[0]
+    #   artist_name = data[1]
+    #   filename_format = data[2]
+    #
+    #   song = self.new
+    #   song.name = name
+    #   song.artist_name = artist_name
+    #   song.filename_format = filename_format
+    #
+    #   song.name
     end
   end
 end
