@@ -47,6 +47,7 @@ class Song
   end
 
   def self.new_from_filename(attribute)
+    binding.pry
     rows = @@all.split("\n")
     song = rows.collect do |row|
       data = row.split(", ") && row.split(".")
