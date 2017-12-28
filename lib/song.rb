@@ -54,14 +54,7 @@ class Song
       artist_name = data[1]
       filename_format = data[2]
 
-      song = self.new
-
-
-
-
-
-
-
+      song = self.create
 
   end
 end
