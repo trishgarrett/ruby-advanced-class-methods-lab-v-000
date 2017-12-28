@@ -50,6 +50,9 @@ class Song
     artist, song = attribute.split(' - ')
     new_song = song.gsub('.mp3', '')
     binding.pry
+    song = create_by_name(new_song)
+    song.artist_name = artist
+    song
 
     # song = attribute.collect do |row|
     #   data = row.split(", ") && row.split(".")
