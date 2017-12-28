@@ -47,8 +47,10 @@ class Song
   end
 
   def self.new_from_filename(attribute)
-    binding.pry
     artist, song = attribute.split(' - ')
+    new_song = song.gsub('.mp3', '')
+    binding.pry
+
     # song = attribute.collect do |row|
     #   data = row.split(", ") && row.split(".")
     # name = data[0]
