@@ -63,6 +63,6 @@ class Song
     #   song.filename_format = filename_format
     #
     #   song.name
-    end
+    #end
   end
 end
