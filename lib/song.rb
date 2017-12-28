@@ -64,7 +64,7 @@ class Song
     song
   end
 
-  def self.destroy_all(:name, :artist_name)
+  def self.destroy_all
 
   end
 end
