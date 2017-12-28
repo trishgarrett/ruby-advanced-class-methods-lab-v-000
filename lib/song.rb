@@ -46,17 +46,14 @@ class Song
     @@all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(filename_format)
-    #song = self.new
-    new_song = self.create_by_name(filename_format)
+  def self.new_from_filename(create_by_name)
+    new_song = self.create_by_name(create_by_name)
     new_song.save
-    #binding.pry
-    #new_song
-    new_song = row.split("-")
-      artist_name = new_song[0]
-       name = new_song[1]
-      filename_format = new_song[2]
+    @@all << new_song
+    
+    
+  
 
-    name
+
   end
 end
