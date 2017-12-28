@@ -62,6 +62,9 @@ class Song
     song = create_by_name(new_song)
     song.artist_name = artist
     song
-
   end
+
+  def self.destroy_all
+    song.all.delete
+  end  
 end
