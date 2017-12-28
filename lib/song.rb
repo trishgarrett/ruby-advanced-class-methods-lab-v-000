@@ -49,7 +49,7 @@ class Song
   def self.new_from_filename(attribute)
     artist, song = attribute.split(' - ')
     new_song = song.gsub('.mp3', '')
-    binding.pry
+    
     song = create_by_name(new_song)
     song.artist_name = artist
     song
