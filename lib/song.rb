@@ -53,7 +53,7 @@ class Song
     #binding.pry
     #new_song
 
-    new_song = row.split("-")
+    new_song = new_song.split("-")
       artist_name = new_song[0]
        name = new_song[1]
       filename_format = new_song[2]
