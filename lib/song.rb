@@ -48,6 +48,7 @@ class Song
 
   def self.new_from_filename(filename_format)
     #song = self.new
+    self.create_by_name
     song.name=(filename_format)
     song
   end
