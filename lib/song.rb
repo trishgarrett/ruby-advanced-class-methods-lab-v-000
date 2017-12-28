@@ -51,6 +51,13 @@ class Song
     new_song = self.create_by_name(filename_format)
     new_song.save
     #binding.pry
-    new_song
+    #new_song
+
+    new_song = row.split("-")
+      artist_name = new_song[0]
+       name = new_song[1]
+      filename_format = new_song[2]
+
+    name
   end
 end
