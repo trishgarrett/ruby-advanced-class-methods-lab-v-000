@@ -66,7 +66,8 @@ class Song
 
   def self.destroy_all
     @@all.each do |song|
+      if song == song
       delete(song)
-    end  
+    end
   end
 end
