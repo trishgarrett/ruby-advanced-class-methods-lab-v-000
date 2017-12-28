@@ -50,7 +50,7 @@ class Song
     #song = self.new
     new_song = self.create_by_name(filename_format)
     new_song.save
-    binding.pry
+    #binding.pry
     new_song
   end
 end
